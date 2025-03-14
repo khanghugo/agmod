@@ -828,6 +828,9 @@ public:
 	void InitTrigger( void );
 
 	virtual int	ObjectCaps( void ) { return CBaseToggle :: ObjectCaps() & ~FCAP_ACROSS_TRANSITION; }
+
+	// For trigger_teleport TriggerTouch
+	int m_iszLandmarkName = 0;
 };
 
 class CChangeLevel : public CBaseTrigger
